@@ -11,20 +11,21 @@ class TableViewController: UITableViewController {
     // Input task array
     var taskArray: [String] = []
     
-    //Input display person's name
-    var names: [String] = [
-           "阿部",
-           "石田",
-           "上田",
-           "遠藤",
-           "及川",
-           "梶原",
-           "菊池",
-           "工藤",
-       ]
+//    //Input display person's name
+//    var names: [String] = [
+//           "阿部",
+//           "石田",
+//           "上田",
+//           "遠藤",
+//           "及川",
+//           "梶原",
+//           "菊池",
+//           "工藤",
+//       ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userDefaults = UserDefaults.standard
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,6 +41,7 @@ class TableViewController: UITableViewController {
          //"add"というキーで保存された値がなにかある -> 値をtaskArrayへ
         if userDefaults.object(forKey: "add") != nil {
         taskArray = userDefaults.object(forKey: "add") as! [String]
+            print(taskArray)
         }
         //tableViewを更新
         tableView.reloadData()
@@ -51,7 +53,7 @@ class TableViewController: UITableViewController {
     // method of return section number
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     // number of cell in section
