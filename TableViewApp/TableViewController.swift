@@ -75,7 +75,22 @@ class TableViewController: UITableViewController {
         
         return cell
     }
-
+    // For delete function
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            taskArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            print(taskArray)
+            
+            // Save the updated taskArray to UserDefaults
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(taskArray, forKey: "add")
+            userDefaults.synchronize()
+            print(taskArray)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
