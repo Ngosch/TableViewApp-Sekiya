@@ -13,6 +13,8 @@
 		FC1DFD272A9B242300D10C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1DFD252A9B242300D10C84 /* Main.storyboard */; };
 		FC1DFD292A9B242400D10C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1DFD282A9B242400D10C84 /* Assets.xcassets */; };
 		FC1DFD2C2A9B242400D10C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1DFD2A2A9B242400D10C84 /* LaunchScreen.storyboard */; };
+		FC1DFD342A9B2DD000D10C84 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1DFD332A9B2DD000D10C84 /* TableViewController.swift */; };
+		FC93431D2A9C4CF800ADD167 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC93431C2A9C4CF800ADD167 /* AddListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FC1DFD282A9B242400D10C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1DFD2B2A9B242400D10C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1DFD2D2A9B242400D10C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1DFD332A9B2DD000D10C84 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FC93431C2A9C4CF800ADD167 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				FC1DFD1F2A9B242300D10C84 /* AppDelegate.swift */,
 				FC1DFD212A9B242300D10C84 /* SceneDelegate.swift */,
 				FC1DFD232A9B242300D10C84 /* ViewController.swift */,
+				FC1DFD332A9B2DD000D10C84 /* TableViewController.swift */,
 				FC1DFD252A9B242300D10C84 /* Main.storyboard */,
 				FC1DFD282A9B242400D10C84 /* Assets.xcassets */,
 				FC1DFD2A2A9B242400D10C84 /* LaunchScreen.storyboard */,
 				FC1DFD2D2A9B242400D10C84 /* Info.plist */,
+				FC93431C2A9C4CF800ADD167 /* AddListViewController.swift */,
 			);
 			path = TableViewApp;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC1DFD242A9B242300D10C84 /* ViewController.swift in Sources */,
+				FC93431D2A9C4CF800ADD167 /* AddListViewController.swift in Sources */,
 				FC1DFD202A9B242300D10C84 /* AppDelegate.swift in Sources */,
 				FC1DFD222A9B242300D10C84 /* SceneDelegate.swift in Sources */,
+				FC1DFD342A9B2DD000D10C84 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
